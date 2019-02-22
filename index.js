@@ -59,6 +59,11 @@ function moveRight(){
   myGamePiece.speedX += 1;
 }
 
+function clearMove(){
+  myGamePiece.speedX = 0;
+  myGamePiece.speedY = 0;
+}
+
 function updateGameArea(){
   myGameArea.clear();
   myGamePiece.newPos();

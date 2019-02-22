@@ -16,10 +16,10 @@
 </head>
 <body onload="startGame()">
   <canvas id="myCanvas">hello again</canvas>
-  <button onClick="moveUp()">UP</button>
-  <button onClick="moveRight()">RIGHT</button>
-  <button onClick="moveDown()">DOWN</button>
-  <button onClick="moveLeft()">LEFT</button>
+  <button onmousedown ="moveUp()" onmouseup="clearMove()">UP</button>
+  <button onmousedown="moveRight()" onmouseup="clearMove()">RIGHT</button>
+  <button onmousedown="moveDown()" onmouseup="clearMove()">DOWN</button>
+  <button onmousedown="moveLeft()" onmouseup="clearMove()">LEFT</button>
 
   <script src="index.js"></script>
 
